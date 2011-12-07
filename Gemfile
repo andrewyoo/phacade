@@ -16,6 +16,11 @@ gem 'jquery-rails'
 gem "haml", '3.0.25'
 gem 'exception_notification'
 
+# execjs and therubyracer are 3.1 fixes for error
+# Could not find a JavaScript runtime
+gem 'execjs'
+gem 'therubyracer'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
