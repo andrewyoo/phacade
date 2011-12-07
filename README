@@ -1,0 +1,16 @@
+phacade.com
+home of andrew yoo
+
+rails new phacade -m https://github.com/russfrisch/Rails-HTML5-Boilerplate-Template/raw/master/rails3.rb -d mysql
+http://kuler.adobe.com/#create/fromacolor
+
+Stack
+Apache Web Server
+Passenger Rails Server
+Rails 3
+MySQL
+HAML
+HTML5 BoilerPlate
+960.gs CSS template
+Jquery
+JqueryUI Aristo Theme
