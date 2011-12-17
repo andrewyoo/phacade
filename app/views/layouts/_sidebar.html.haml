@@ -1,5 +1,6 @@
 %ul
-  = link_to content_tag(:li, 'About'), '#'
-  = link_to content_tag(:li, 'Projects'), '#'
-  = link_to content_tag(:li, 'Resume'), '#'
-  = link_to content_tag(:li, 'Contact'), '#'
+  = link_to content_tag(:li, 'About'), about_path, :class => ('active' if params[:controller] == 'home' and params[:action] =~ /about|index/ )
+  = link_to content_tag(:li, 'Projects'), projects_path, :class => ('active' if params[:controller] == 'home' and params[:action] == 'projects' )
+  = link_to content_tag(:li, 'Resume'), resume_path, :class => ('active' if params[:controller] == 'home' and params[:action] == 'resume' )
+  = link_to content_tag(:li, 'Contact'), contact_path, :class => ('active' if params[:controller] == 'home' and params[:action] == 'contact' )
+  = link_to content_tag(:li, 'Blogs'), blogs_path, :class => ('active' if params[:controller] == 'home' and params[:action] == 'blogs' )

@@ -1,5 +1,10 @@
 Phacade::Application.routes.draw do
   root :to => "home#index"
+  match '/about' => 'home#about'
+  match '/projects' => 'home#projects'
+  match '/resume' => 'home#resume'
+  match '/blogs' => 'home#blogs'
+  match '/contact' => 'home#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
