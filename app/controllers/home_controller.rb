@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def about
+    render :action => :index
   end
 
   def projects

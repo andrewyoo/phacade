@@ -23,10 +23,15 @@ body
 
 #content_wrapper
   min-height: 600px
-  background-color: white
-  filter: alpha(opacity=90)
-  opacity: 0.9
-  border-radius: 5px 5px
+  .overlay
+    position: absolute
+    background-color: white
+    filter: alpha(opacity=90)
+    opacity: 0.9
+    width: 100%
+    top: 0
+    bottom: 0
+    border-radius: 5px 5px
   #content
     filter: alpha(opacity=100)
     opacity: 2
