@@ -10,24 +10,11 @@
   #content_wrapper.grid_9
     .overlay
     #content
-      #tabs
-        %ul
-          %li= link_to 'About Me', '#tabs-1'
-          %li= link_to 'About Phacade', '#tabs-2'
-
-        #tabs-1 
-          %h2 Who am I?
-          .right.leftpad= image_tag 'profile.gif'
-          %p My name is Andrew and i've been working in the tech/internet industry since 2006.  I started out starting my on my own website with some partners and since 2006 I have also been working professionally in San Francisco.
-          %p I am now working professionally as a web developer even though my college trade was in electrical.  What I like about programming is the ability to create useful tools and sites with very little resources other than time.  As I'm getting older though, time is becoming the most valuable resource I have...
-          %p My professional passion is to create useful websites which can also get me rich one day.  I hope you enjoy some of my projects and understand there is a lot of development work still to be had in most of them.
-
-        #tabs-2 
-          %h2 Phacade.com
-          .right.leftpad= image_tag 'phacade_screen2.png'
-          %p This is probably my favorite domain name out 20 some odd domains I own.  It doesn't have much application towards a product/website so I decided to make it my personal site.
-          %p Phacade is a play on facade which means:
-          %blockquote 
-            %p "a superficial appearance or illusion of something"
-            %small dictionary.com
-          %p It represents the site name itself as well as a lot of the web projects I work on.  I can make a beautiful website with the look and feel of a big team behind it, but it may just be a one man show.  It kinda has a negative connotation to it, but I think it's very fitting of all website companies.
+      %section
+        %h2 
+          Resume
+          %small (Profiles)
+        %div
+          = link_to "LinkedIn", "http://www.linkedin.com/profile/view?id=6236169&authType=name&authToken=6n4-&locale=en_US&pvs=pp&trk=ppro_viewmore"
+          %br/
+          = link_to "Facebook", "http://www.facebook.com/andrew.yoo"
