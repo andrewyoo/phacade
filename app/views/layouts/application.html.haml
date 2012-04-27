@@ -13,7 +13,7 @@
       Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame
       Remove this if you use the .htaccess
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-    %title Phacade.com
+    %title= @title || 'Phacade.com'
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
     / Mobile viewport optimized: j.mp/bplateviewport
@@ -26,7 +26,7 @@
 
   %body
     = render :partial => 'layouts/header'
-    #wrapper
+    #wrapper.clearfix
       = yield
       / ! end of #container
     = render :partial => 'layouts/footer'
