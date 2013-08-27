@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.14'
 gem 'sqlite3'
 
 # Bundle edge Rails instead:
