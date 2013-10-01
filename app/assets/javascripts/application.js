@@ -6,3 +6,7 @@
 //= require respond
 //= require jquery.colorbox
 //= require_self
+
+$(document).ready(function() {
+  $('.tabs').tabs();
+});

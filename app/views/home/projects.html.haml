@@ -1,8 +1,3 @@
-:javascript
-  $(document).ready(function() {
-    $('#tabs').tabs();
-  });
-
 .container_12
   #sidebar_wrapper.grid_3
     #sidebar
@@ -10,23 +5,46 @@
   #content_wrapper.grid_9
     .overlay
     #content
-      #tabs
+      %h3 Business Products
+      .tabs
         %ul
           %li= link_to 'Dineries', '#tabs-1'
           %li= link_to 'GrayPoll', '#tabs-7'
-          %li= link_to 'CountDowning', '#tabs-2'
-          %li= link_to 'Cutepons', '#tabs-3'
-          %li= link_to 'PitchSlides', '#tabs-4'
           %li= link_to 'BayAreaSatAcademy', '#tabs-5'
+          %li= link_to 'VaporPens', '#tabs-10'
           %li= link_to 'Sporq', '#tabs-6'
-          %li= link_to 'ShareTodoList', '#tabs-8'
-          %li= link_to 'Blank Site', '#tabs-9'
-
         #tabs-1.clearfix
           %h2= link_to 'dineries.com', 'http://dineries.com'
           .right.leftpad= image_tag 'dineries_screenshot_thumb.png'
           %p 
             Dineries was started in April of 2010 and was a continuation of the dream of sporq.  Like Sporq, Dineries is a website about restaurants.  It features restaurant menus and aims to provide users and restaurant owners more visibility in finding and ordering from restaurants.  Dineries has a fresh design and has more features built in than its predecessor Sporq.
+        #tabs-5.clearfix
+          %h2= link_to 'bayareasatacademy.com', 'http://www.bayareasatacademy.com'
+          .right.leftpad= image_tag 'basa_screenshot_thumb.png'
+          %p 
+            Are you in the bay area and in need of a SAT tutor?  Visit this #{link_to 'site', 'http://www.bayareasatacademy.com'} then.  These are some smart guys tutoring the next generation.  I helped them build their website, because more people need to know about BayAreaSATAcademy.
+        #tabs-7.clearfix
+          %h2= link_to 'graypoll.com', 'http://graypoll.com'
+          %p Create a poll for anything and everything.  For questions to life when things aren't blank and white.
+        #tabs-6.clearfix
+          %h2 sporq 2006 - 2011
+          .right.leftpad= image_tag 'sporq_screenshot_thumb.png'
+          %p 
+            Sporq was a restaurant menu website and was my first product outside of college.  It ran from 2006 - 2011.  I have a lot of fond memories working on this with my former partners.  
+        #tabs-10.clearfix
+          %h2= link_to 'vaporpens.com', 'http://www.vaporpens.com'
+          %p 
+            E-commerce shop for vaporizers for aroma therapy use.
+
+      %h3 Side Products
+      .tabs
+        %ul
+          %li= link_to 'CountDowning', '#tabs-2'
+          %li= link_to 'Cutepons', '#tabs-3'
+          %li= link_to 'PitchSlides', '#tabs-4'
+          %li= link_to 'ShareTodoList', '#tabs-8'
+          %li= link_to 'Blank Site', '#tabs-9'
+
 
         #tabs-2.clearfix
           %h2= link_to 'countdowning.com', 'http://www.countdowning.com'
@@ -44,19 +62,6 @@
           .right.leftpad= image_tag 'pitchslides_screenshot_thumb.png'
           %p 
             This website converts PPT and PDF files into a more web friendly presentation to share on the internet.
-        #tabs-5.clearfix
-          %h2= link_to 'bayareasatacademy.com', 'http://www.bayareasatacademy.com'
-          .right.leftpad= image_tag 'basa_screenshot_thumb.png'
-          %p 
-            Are you in the bay area and in need of a SAT tutor?  Visit this #{link_to 'site', 'http://www.bayareasatacademy.com'} then.  These are some smart guys tutoring the next generation.  I helped them build their website, because more people need to know about BayAreaSATAcademy.
-        #tabs-6.clearfix
-          %h2 sporq 2006 - 2011
-          .right.leftpad= image_tag 'sporq_screenshot_thumb.png'
-          %p 
-            Sporq was a restaurant menu website and was my first product outside of college.  It ran from 2006 - 2011.  I have a lot of fond memories working on this with my former partners.  
-        #tabs-7.clearfix
-          %h2= link_to 'graypoll.com', 'http://graypoll.com'
-          %p Create a poll for anything and everything.  For questions to life when things aren't blank and white.
         #tabs-8.clearfix
           %h2= link_to 'sharedotolist.com', 'http://sharetodolist.com'
           %p Create a todolist and share online.  Collaborate with others and improve productivity.
