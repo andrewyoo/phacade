@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '3.2.16'
 gem 'sqlite3'
 
 # Bundle edge Rails instead:
@@ -20,6 +20,8 @@ gem 'exception_notification'
 # Could not find a JavaScript runtime
 gem 'execjs'
 gem 'therubyracer'
+gem "font-awesome-rails"
+gem 'bootstrap-sass'
 
 # Use unicorn as the web server
 # gem 'unicorn'
