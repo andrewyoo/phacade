@@ -1,0 +1,28 @@
+.container_12
+  #sidebar_wrapper.grid_3
+    #sidebar
+      = render :partial => 'layouts/sidebar'
+  #content_wrapper.grid_9
+    .overlay
+    #content
+      .tabs
+        %ul
+          %li= link_to 'Welcome', '#tabs-1'
+          %li= link_to 'About Phacade', '#tabs-2'
+
+        #tabs-1 
+          %h2 Welcome to phacade.com
+          %p Phacade.com is the official website of Phacade LLC.  We have filed in the state of California as an offical limited liability company on 1/30/2013.  We primarly build online websites to engage, entertain, and help people.
+          %p Feel free to check out this site and #{link_to 'contact us', '/contact'} if you would like to send us a message.
+
+        #tabs-2 
+          %h2 Phacade.com
+          .right.leftpad= image_tag 'phacade_screen2.png'
+          %p This is probably my favorite domain name out 20 some odd domains I own.  It doesn't have much application towards a product/website so I decided to make it my umbrella company site.
+          %p Phacade is a play on facade which means:
+          %blockquote 
+            %p "a superficial appearance or illusion of something"
+            %small dictionary.com
+          %p It represents the site name itself as well as a lot of the web projects I work on.  I can make a beautiful website with the look and feel of a big team behind it, but it may just be a one man show.  It kinda has a negative connotation to it, but I think it's very fitting of all website companies.
+          
+

@@ -6,6 +6,8 @@ Phacade::Application.routes.draw do
   match '/blogs' => 'home#blogs'
   match '/contact' => 'home#contact'
 
+  resources :parallax
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
