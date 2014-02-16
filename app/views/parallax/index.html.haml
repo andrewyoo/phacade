@@ -1,60 +1,167 @@
-#fb-root
-#container.wrapper
-  %ul#scene.scene.unselectable{"data-friction-x" => "0.1", "data-friction-y" => "0.1", "data-scalar-x" => "25", "data-scalar-y" => "15"}
-    %li.layer{"data-depth" => "0.00"}
-    %li.layer{"data-depth" => "0.10"}
-      .background
-    %li.layer{"data-depth" => "0.10"}
-      .light.orange.b.phase-4
-    %li.layer{"data-depth" => "0.10"}
-      .light.purple.c.phase-5
-    %li.layer{"data-depth" => "0.10"}
-      .light.orange.d.phase-3
-    %li.layer{"data-depth" => "0.15"}
-      %ul.rope.depth-10
-        %li
-          %img{:alt => "Rope", :src => "assets/parallax/rope.png"}/
-        %li.hanger.position-2
-          .board.plank.swing-1
-            .plank-label
-              = link_to 'Projects', '/'
-        %li.hanger.position-4
-          .board.cloud-1.swing-3
-        %li.hanger.position-8
-          .board.birds.swing-5
-    %li.layer{"data-depth" => "0.20"}
-      %h1.title
-        phacade
-        %em .com
-    %li.layer{"data-depth" => "0.30"}
-      %ul.rope.depth-30
-        %li
-          %img{:alt => "Rope", :src => "assets/parallax/rope.png"}/
-        %li.hanger.position-1
-          .board.cloud-1.swing-3
-        %li.hanger.position-5
-          .board.cloud-4.swing-1
-    %li.layer{"data-depth" => "0.30"}
-      .wave.paint.depth-30
-    %li.layer{"data-depth" => "0.40"}
-      .wave.plain.depth-40
-    %li.layer{"data-depth" => "0.50"}
-      .wave.paint.depth-50
-    %li.layer{"data-depth" => "0.60"}
-      .ship.depth-60
-    %li.layer{"data-depth" => "0.60"}
-      %ul.rope.depth-60
-        %li
-          %img{:alt => "Rope", :src => "assets/parallax/rope.png"}/
-        %li.hanger.position-3
-          .board.birds.swing-5
-        %li.hanger.position-6
-          .board.cloud-2.swing-2
-        %li.hanger.position-8
-          .board.cloud-3.swing-4
-    %li.layer{"data-depth" => "0.60"}
-      .wave.plain.depth-60
-    %li.layer{"data-depth" => "0.80"}
-      .wave.plain.depth-80
-    %li.layer{"data-depth" => "1.00"}
-      .wave.paint.depth-100
+#wrapper
+  #fb-root
+  #container.wrapper
+    %ul#scene.scene.unselectable{"data-friction-x" => "0.1", "data-friction-y" => "0.1", "data-scalar-x" => "25", "data-scalar-y" => "15"}
+      %li.layer{"data-depth" => "0.00"}
+      %li.layer{"data-depth" => "0.10"}
+        .background
+      %li.layer{"data-depth" => "0.10"}
+        .light.orange.b.phase-4
+      %li.layer{"data-depth" => "0.10"}
+        .light.purple.c.phase-5
+      %li.layer{"data-depth" => "0.10"}
+        .light.orange.d.phase-3
+      %li.layer{"data-depth" => "0.15"}
+        %ul.rope.depth-10
+          %li
+            %img{:alt => "Rope", :src => "assets/parallax/rope.png"}/
+          %li.hanger.position-2
+            .board.plank.swing-1
+              .plank-label
+                = link_to 'Home', '#/slide-0'
+          %li.hanger.position-4
+            .board.birds.swing-3
+          %li.hanger.position-8
+            .board.plank.swing-5
+              .plank-label
+                = link_to 'Contact', '#/slide-5'
+      %li.layer{"data-depth" => "0.20"}
+        %h1.title
+          phacade
+          %em .com
+      %li.layer{"data-depth" => "0.30"}
+        %ul.rope.depth-30
+          %li
+            %img{:alt => "Rope", :src => "assets/parallax/rope.png"}/
+          %li.hanger.position-1
+            .board.cloud-1.swing-3
+          %li.hanger.position-5
+            .board.cloud-4.swing-1
+      %li.layer{"data-depth" => "0.30"}
+        .wave.paint.depth-30
+      %li.layer{"data-depth" => "0.40"}
+        .wave.plain.depth-40
+      %li.layer{"data-depth" => "0.50"}
+        .wave.paint.depth-50
+      %li.layer{"data-depth" => "0.60"}
+        .ship.depth-60
+      %li.layer{"data-depth" => "0.60"}
+        %ul.rope.depth-60
+          %li
+            %img{:alt => "Rope", :src => "assets/parallax/rope.png"}/
+          %li.hanger.position-3
+            .board.plank.swing-5
+              .plank-label
+                = link_to 'About', '#/slide-1'
+          %li.hanger.position-6
+            .board.plank.swing-2
+              .plank-label
+                = link_to 'Projects', '#/slide-2'
+          %li.hanger.position-8
+            .board.cloud-3.swing-4
+      %li.layer{"data-depth" => "0.60"}
+        .wave.plain.depth-60
+      %li.layer{"data-depth" => "0.80"}
+        .wave.plain.depth-80
+      %li.layer{"data-depth" => "1.00"}
+        .wave.paint.depth-100
+
+  .reveal
+    .slides
+      %section#slide-0
+      %section#slide-1
+        %section
+          .slidebox
+            %h2 About - Welcome
+            %p
+              Phacade.com is the official website of Phacade LLC. We have filed in the state of California as an offical limited liability company on 1/30/2013. We primarly build online websites to engage, entertain, and help people.
+            %p
+              Feel free to check out this site and contact us if you would like to send us a message.
+        %section
+          .slidebox
+            %h2 About - Phacade
+            %p
+              Phacade.com is built with and mainly copied from:
+              %br/
+              = link_to 'Rails', 'http://rubyonrails.org/'
+              |
+              = link_to 'parallax.js', 'https://github.com/wagerfield/parallax'
+              |
+              = link_to 'reveal.js', 'https://github.com/hakimel/reveal.js'
+
+      %section#slide-2
+        %section
+          .slidebox
+            %h2 Projects
+            %p I have been involved in a lot of projects.  Press down or click the down arrow in the bottom right corner to view them.
+        %section
+          .slidebox
+            %h2 Dineries - Projects
+            %p.clearfix.lalign
+              = image_tag 'dineries_screenshot_thumb.png', class: 'pull-left thumb', alt: 'dineries.com'
+              = link_to 'Dineries', 'http://dineries.com'
+              was started in April of 2010 and was a continuation of the dream of sporq.  Like Sporq, Dineries is a website about restaurants.  It features restaurant menus and aims to provide users and restaurant owners more visibility in finding and ordering from restaurants.  Dineries has a fresh design and has more features built in than its predecessor Sporq.
+        %section
+          .slidebox
+            %h2 VaporPens - Projects
+            %p.clearfix.lalign
+              = image_tag 'vaporpens_screenshot_thumb.png', class: 'pull-left thumb', alt: 'vaporpens.com'
+              = link_to 'VaporPens', 'http://www.vaporpens.com'
+              is a vaporizer shop built using the shopify e-commerce software.
+        %section
+          .slidebox
+            %h2 Topoli Motors - Projects
+            %p.clearfix.lalign
+              = image_tag 'topoli_screenshot_thumb.png', class: 'pull-left thumb', alt: 'topolimotors.com'
+              = link_to 'Topoli Motors', 'http://www.topolimotors.com'
+              is the Eastbay's premier used car dealership located in Pleasant Hill.
+        %section
+          .slidebox
+            %h2 Bay Area SAT Academy - Projects
+            %p.clearfix.lalign
+              = image_tag 'basa_screenshot_thumb.png', class: 'pull-left thumb', alt: 'bayareasatacademy.com'
+              = link_to 'Bay Area SAT Academy', 'http://www.bayareasatacademy.com'
+              is a business that provides private SAT tutoring. These are some smart guys tutoring the next generation. I helped them build their website, because more people need to know about BayAreaSATAcademy.
+        %section
+          .slidebox
+            %h2 GrayPoll - Projects
+            %p.clearfix.lalign
+              = link_to 'GrayPoll', 'http://www.graypoll.com'
+              to create a poll for anything and everything. For questions to life when things aren't blank and white.
+        %section
+          .slidebox
+            %h2 CountDowning - Projects
+            %p.clearfix.lalign
+              = image_tag 'countdowning_screenshot_thumb.png', class: 'pull-left thumb', alt: 'countdowning.com'
+              = link_to 'Countdowning', 'http://www.countdowning.com'
+              is a fun project spawned off of me coming of age (30 that is). In 2012 I hit the 30 year old mark and as a reminder to myself I created a countdown.
+        %section
+          .slidebox
+            %h2 Share Todo List - Projects
+            %p.clearfix.lalign
+              = image_tag 'sharetodolist_screenshot_thumb.png', class: 'pull-left thumb', alt: 'sharetodolist.com'
+              = link_to 'ShareTodoList', 'http://www.sharetodolist.com/'
+              allows you to create a todolist and share online. Collaborate with others and improve productivity.
+        %section
+          .slidebox
+            %h2 Blank Site - Projects
+            %p.clearfix.lalign
+              = link_to 'Blank Site', 'https://bitbucket.org/andrewyoo/blank-site/wiki/Home'
+              is a quick start project to quickly bootstrap a simple static site with backend and inline editing html for non devs to manage. I've been asked to build a lot of simple content websites mainly for small businesses and this project lets me get started quicker.  Also bundled with lots the goodies for quick ui development. Bootstrap 3, Mercury WYSIWYG editor, ActiveAdmin Backend. Check Out the
+              = link_to 'Demo', 'http://blank-site.phacade.com/'
+        %section
+          .slidebox
+            %h2 DownloadMeow - Projects
+            %p.clearfix.lalign
+              = link_to 'DownloadMeow', 'http://www.downloadmeow.com'
+              is a shopify app to handle digital deliver orders.  If you are selling digital content on shopify, use DownloadMeow to allow you customers to download their orders.
+
+
+      %section#slide-5
+        .slidebox
+          %h2 Contact
+          %p Contact me at andrew@phacade.com if you have a message for me.
+          %p
+            = link_to 'GitHub', 'http://www.github.com/andrewyoo'
+            %br/
+            = link_to 'LinkedIn', 'http://www.linkedin.com/profile/view?id=6236169&authType=name&authToken=6n4-&locale=en_US&pvs=pp&trk=ppro_viewmore'

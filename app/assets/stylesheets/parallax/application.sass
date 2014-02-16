@@ -1,3 +1,6 @@
+// *= require 'reveal.min'
+@import 'bootstrap'
+
 // Fonts
 @import url("http://fonts.googleapis.com/css?family=Dosis:600|Roboto+Slab:100,300,400,700")
 
@@ -21,3 +24,22 @@
 @import project/print
 @import project/animation
 @import project/awards
+
+.reveal .slidebox
+  font-size: 1.2em
+  border: 1px solid #666
+  +border-radius(10px)
+  padding: 40px
+  background-color: #333
+  opacity: 0.95
+  pointer-events: visible
+  h2
+    margin-bottom: 10px
+  img
+    width: auto
+    &.thumb
+      margin-right: 20px
+  .lalign
+    text-align: left
+.controls
+  pointer-events: visible

@@ -124,7 +124,7 @@ footer
 //----------------------------------------
 
 .center
-  max-width: $MAX_WIDTH
+  //max-width: $MAX_WIDTH
   margin: 0 auto
   width: 88%
 
@@ -134,6 +134,10 @@ footer
 // Wrapper
 //----------------------------------------
 
+#wrapper
+  height: 100%
+  width: 100%
+  pointer-events: none
 .wrapper
   min-height: $MIN_HEIGHT
   position: absolute
@@ -432,7 +436,6 @@ footer
   overflow: hidden
 
 .layer
-  pointer-events: none
   position: absolute
   div
     +transform("translate3d(0,0,0)")

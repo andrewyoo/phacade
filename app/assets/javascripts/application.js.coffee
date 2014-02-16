@@ -1,6 +1,8 @@
 //= require jquery_ujs
 //= require jquery.parallax
-//= require bootstrap
+//= require reveal.min
 //= require_self
 
-$('#scene').parallax()
+$ -> 
+  $('#scene').parallax()
+  Reveal.initialize()
