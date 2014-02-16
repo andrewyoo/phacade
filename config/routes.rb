@@ -1,5 +1,5 @@
 Phacade::Application.routes.draw do
-  root :to => "home#index"
+  root :to => "parallax#index"
   match '/about' => 'home#about'
   match '/projects' => 'home#projects'
   match '/resume' => 'home#resume'

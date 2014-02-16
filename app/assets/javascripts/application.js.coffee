@@ -5,4 +5,4 @@
 
 $ -> 
   $('#scene').parallax()
-  Reveal.initialize()
+  Reveal.initialize(loop: true)
