@@ -18,18 +18,24 @@
     %meta{:content => "", :name => "author"}/
     / Mobile viewport optimized: j.mp/bplateviewport
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    = stylesheet_link_tag "application"
+    = stylesheet_link_tag "v1/application"
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
     :javascript
       window.jQuery || document.write('<script src="/assets/jquery-1.7.1.min.js"><\/script>')
-    = javascript_include_tag "application"
+    = javascript_include_tag "v1/application"
 
   %body
-    = render :partial => 'layouts/header'
+    #header
+      .container_12.clearfix
+        .grid_12
+          #logo= link_to(image_tag('phacade_logo_white.png'), '/')
+
     #wrapper.clearfix
       = yield
       / ! end of #container
-    = render :partial => 'layouts/footer'
+    #footer
+      Phacade LLC Copyright 2010 - #{Time.now.year}
+
     
     :javascript
       var _gaq=[['_setAccount','UA-48037751-1'],['_trackPageview'],['_trackPageLoadTime']];
