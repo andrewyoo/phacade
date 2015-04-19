@@ -1,12 +1,18 @@
 Phacade::Application.routes.draw do
   root :to => "parallax#index"
-  match '/about' => 'home#about'
-  match '/projects' => 'home#projects'
-  match '/resume' => 'home#resume'
-  match '/blogs' => 'home#blogs'
-  match '/contact' => 'home#contact'
 
-  resources :parallax
+  scope '/v1' do
+    match '/' => 'home#index'
+    match '/about' => 'home#about'
+    match '/projects' => 'home#projects'
+    match '/resume' => 'home#resume'
+    match '/blogs' => 'home#blogs'
+    match '/contact' => 'home#contact'
+  end
+  
+  scope '/v2' do
+    match '/' => 'parallax#index'
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

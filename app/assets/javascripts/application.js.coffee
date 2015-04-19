@@ -1,8 +1,11 @@
+//= require jquery-ui
 //= require jquery_ujs
-//= require jquery.parallax
-//= require reveal.min
+//= require rails
+//= require modernizr
+//= require plugins
+//= require respond
+//= require jquery.colorbox
 //= require_self
 
-$ -> 
-  $('#scene').parallax()
-  Reveal.initialize(loop: true)
+$ ->
+  $('.tabs').tabs()

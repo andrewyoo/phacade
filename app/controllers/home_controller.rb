@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  layout 'v1'
   def index
     @title = "Welcome To Phacade"
   end
