@@ -1,5 +1,5 @@
 Phacade::Application.routes.draw do
-  root :to => "parallax#index"
+  root :to => "simple#index"
 
   scope '/v1' do
     match '/' => 'home#index'
@@ -12,6 +12,12 @@ Phacade::Application.routes.draw do
   
   scope '/v2' do
     match '/' => 'parallax#index'
+  end
+  scope '/v3' do
+    match '/' => 'one_page#index'
+  end
+  scope '/v4' do
+    match '/' => 'simple#index'
   end
 
   # The priority is based upon order of creation:
