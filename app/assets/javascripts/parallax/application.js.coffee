@@ -1,6 +1,6 @@
 //= require jquery_ujs
 //= require jquery.parallax
-//= require reveal.min
+//= require reveal
 //= require_self
 
 $ -> 
