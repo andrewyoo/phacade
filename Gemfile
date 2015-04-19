@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+ruby '2.1.2'
+
 gem 'rails', '3.2.21'
 
 group :development, :test do
@@ -29,6 +31,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem "font-awesome-rails"
 gem 'bootstrap-sass'
+gem 'rails_12factor', group: :production
 
 # Use unicorn as the web server
 # gem 'unicorn'
