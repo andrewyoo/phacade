@@ -97,7 +97,7 @@ footer {
 }
 
 .spinner {
-	background: url(../img/flat-loader.gif);
+	background: url(../v3/flat-loader.gif);
   	width: 128px;
   	height: 128px;
   	position: absolute;

@@ -24,6 +24,7 @@ end
 gem "jquery-rails", "~> 2.3.0"
 gem "haml"
 gem 'exception_notification'
+gem "font-awesome-rails"
 
 # execjs and therubyracer are 3.1 fixes for error
 # Could not find a JavaScript runtime

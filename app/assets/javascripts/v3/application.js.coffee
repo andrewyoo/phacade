@@ -23,5 +23,3 @@
 //= require "v3/jquery.mb.YTPlayer.js"
 //= require "v3/tytabs.js"
 //= require "v3/custom.js"
-
-$ ->
