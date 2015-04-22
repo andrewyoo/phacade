@@ -14,7 +14,7 @@ Phacade::Application.routes.draw do
     match '/' => 'parallax#index'
   end
   scope '/v3' do
-    match '/' => 'one_page#index'
+    match '/' => 'agency#index'
   end
   scope '/v4' do
     match '/' => 'simple#index'

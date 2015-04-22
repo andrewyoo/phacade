@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    %title= @title || 'Phacade.com'
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    = stylesheet_link_tag    "v3/application"
+    = csrf_meta_tags
+    
+    %meta{charset: "utf-8"}
+    / Google Fonts
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Raleway:400,500,600,700'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Pacifico'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Tangerine'
+    
+    /
+      Favicons
+      %link{rel: 'shortcut icon', href: '/favicon.ico'}
+      %link{rel: 'apple-touch-icon', href: ''}
+      %link{rel: 'apple-touch-icon', sizes: '72x72', href: ''}
+      %link{rel: 'apple-touch-icon', sizes: '114x114', href: ''}
+      %link{rel: 'apple-touch-icon', sizes: '144x144', href: ''}
+    
+    / 
+      [if IE]>
+      <link rel="stylesheet" href="css/ie.css">
+      <![endif]
+      
+  %body{data: {spy: 'scroll', target: '#navigation', offset: '75'}}
+    = yield
+
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'
+    = javascript_include_tag '//maps.google.com/maps/api/js?sensor=false'
+    = javascript_include_tag "v3/application"
+    
+    = render 'layouts/ganalytics'
