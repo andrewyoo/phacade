@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.4.2'
 
-gem 'rails', '3.2.21'
+gem 'rails', '3.2.22.5'
 
 group :development, :test do
   gem 'sqlite3'
@@ -16,7 +16,8 @@ end
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :assets do
-  gem 'sass-rails', "  ~> 3.2.3"
+  gem 'sass', '3.2.19'
+  gem 'sass-rails', "~> 3.2.3"
   gem 'coffee-rails', "~> 3.2.1"
   gem 'uglifier', '>= 1.0.3'
 end
@@ -24,14 +25,13 @@ end
 gem "jquery-rails", "~> 2.3.0"
 gem "haml"
 gem 'exception_notification'
-gem "font-awesome-rails"
 
 # execjs and therubyracer are 3.1 fixes for error
 # Could not find a JavaScript runtime
 gem 'execjs'
 gem 'therubyracer'
 gem "font-awesome-rails"
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '3.1.1.0'
 gem 'rails_12factor', group: :production
 
 # Use unicorn as the web server
