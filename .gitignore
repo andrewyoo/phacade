@@ -6,3 +6,4 @@ tmp/
 *.swp
 config/deploy.rb
 Capfile
+**/.DS_Store
